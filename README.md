@@ -1,2 +1,2 @@
-# brew_recipe_app
-pair program project for my original recipe app. 
+# Brew Recipe App
+Pair program project for my original recipe app. 
