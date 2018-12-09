@@ -1,0 +1,10 @@
+spring:
+  profiles: local
+  security:
+    user:
+      name: admin
+      password: admin
+
+---
+spring:
+  profiles: dev
