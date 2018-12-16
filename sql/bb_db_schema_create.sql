@@ -10,8 +10,8 @@ USE bb_db;
 
 	CREATE TABLE Grain (
 		ID INT PRIMARY KEY AUTO_INCREMENT,
-		GrainName VARCHAR(40),
-		LoviBond VARCHAR(2.2)
+		name VARCHAR(40),
+		lovibond VARCHAR(2.2)
 	);
 
 	CREATE TABLE Hop (
