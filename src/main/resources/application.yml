@@ -4,7 +4,35 @@ spring:
     user:
       name: admin
       password: admin
+  jpa:
+    hibernate:
+      ddl-auto: none
+  datasource:
+    url: jdbc:mysql://localhost:3306/bb_db
+    username: bb_db_user
+    password: sesame
+    driver-class-name: com.mysql.cj.jdbc.Driver
+management:
+  endpoint:
+    health:
+      show-details: "ALWAYS"
 
 ---
 spring:
   profiles: dev
+  security:
+    user:
+      name: admin
+      password: admin
+  jpa:
+    hibernate:
+      ddl-auto: none
+  datasource:
+    url: jdbc:mysql://localhost:3306/bb_db
+    username: bb_db_user
+    password: sesame
+    driver-class-name: com.mysql.cj.jdbc.Driver
+management:
+  endpoint:
+    health:
+      show-details: "ALWAYS"
