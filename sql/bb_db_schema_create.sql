@@ -10,30 +10,29 @@ USE bb_db;
 
 	CREATE TABLE Grain (
 		ID INT PRIMARY KEY AUTO_INCREMENT,
-		name VARCHAR(40),
-		lovibond VARCHAR(2.2)
+		Name VARCHAR(40),
+		Lovibond VARCHAR(2.2)
 	);
 
 	CREATE TABLE Hop (
 		ID INT PRIMARY KEY AUTO_INCREMENT,
-		HopName VARCHAR(10),
+		Name VARCHAR(10),
 		AlphaAcid VARCHAR(2.2),
 		Flavor VARCHAR(225)
 	);
 
 	CREATE TABLE Yeast (
 		ID INT PRIMARY KEY AUTO_INCREMENT,
-		YeastName VARCHAR(25),
+		Name VARCHAR(25),
 		Style VARCHAR(12),
 		Attenuation VARCHAR(4),
 		Floculation VARCHAR(4)
-
 	);
 
 	CREATE TABLE Recipe (
 		ID INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-		Recipe_Name VARCHAR(100),
-		STYLE VARCHAR(12),
+		Name VARCHAR(100),
+		Style VARCHAR(12),
 		IBU INT(3.2),
 		ABV INT(2.1),
 		SRM INT(2.1),
